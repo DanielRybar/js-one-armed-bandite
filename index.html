@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./site.css">
+    <script src="./index.js"></script>
+    <title>Jednoruký bandita</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hra - jednoruký bandita</h1>
+        <form>
+            <label>Zadej částku v korunách</label>
+            <input type="number" id="givenMoney">
+            <button class="btn btn-secondary" type="submit" id="confirmBtn">Potvrdit</button>
+        </form>
+        <div id="errorMessage"></div>
+        <div class="row row-vklad">
+            <div class="col-sm">
+                <p id="vklad"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <svg width="100" height="200">
+                    <rect width="100" height="200" style="fill:white;stroke-width:3;stroke:rgb(0,0,0)" id="first" />
+                  </svg>
+                  <p id="color1"></p>
+            </div>
+            <div class="col-sm">
+                <svg width="100" height="200">
+                    <rect width="100" height="200" style="fill:white;stroke-width:3;stroke:rgb(0,0,0)" id="second" />
+                  </svg>
+                  <p id="color2"></p>
+            </div>
+            <div class="col-sm">
+                <svg width="100" height="200">
+                    <rect width="100" height="200" style="fill:white;stroke-width:3;stroke:rgb(0,0,0)" id="third" />
+                  </svg>
+                  <p id="color3"></p>
+            </div>
+        </div>
+        <button class="btn btn-danger" id="process">Toč</button>
+        <p id="actualMoneyLostOrIncrease"></p>
+    </div>
+</body>
+</html>
